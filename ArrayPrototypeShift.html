@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array.prototype.shift()</title>
+</head>
+
+<body>
+    <h1>Array.prototype.shift()</h1>
+    <p>Syntax <b>arr.shift()</b></p>
+    <p>
+        The pop() method removes the last element from an array and returns that element.
+        <br>
+        This method changes the length of the array.
+    </p>
+    <script>
+        const array1 = [1, 2, 3];
+
+        console.log('array1 before:', JSON.stringify(array1));
+
+        const shiftedNumber = array1.shift();
+
+        console.log('Removed this number:', shiftedNumber);
+        // expected output: 1
+
+        console.log('array1 after',array1);
+        // expected output: Array [2, 3]
+        // ============================================================
+
+        var myFish = ['angel', 'clown', 'mandarin', 'surgeon'];
+
+        console.log('myFish before:', JSON.stringify(myFish));
+        // myFish before: ['angel', 'clown', 'mandarin', 'surgeon']
+
+        var shifted = myFish.shift();
+
+        console.log('Removed this element:', shifted);
+        // Removed this element: angel
+
+        console.log('myFish after:', myFish);
+        // myFish after: ['clown', 'mandarin', 'surgeon']
+
+        // console.log('Removed this element:', shifted);
+        // Removed this element: angel
+ 
+
+    </script>
+</body>
+
+</html>
