@@ -21,7 +21,7 @@ Array.prototype.keys()
 Array.prototype.lastIndexOf()
 # Array.prototype.map()
 # Array.prototype.pop() - 03/02/2020
-Array.prototype.push()
+# Array.prototype.push() - 03/02/2020
 # Array.prototype.reduce()
 Array.prototype.reduceRight()
 Array.prototype.reverse()
@@ -33,7 +33,7 @@ Array.prototype.splice()
 Array.prototype.toLocaleString()
 Array.prototype.toSource()
 Array.prototype.toString()
-Array.prototype.unshift()
+# Array.prototype.unshift() - 03/02/2020
 Array.prototype.values()
 Array.prototype[@@iterator]()
 Array.unobserve()
