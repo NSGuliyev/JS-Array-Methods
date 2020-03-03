@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array.isArray()</title>
+</head>
+
+<body>
+    <h1>Array.isArray()()</h1>
+    <p>The Array.isArray() method determines whether the passed value is an Array.</p>
+
+
+
+    <script>
+
+        let names = ['Bart', 'Maggie', 'Homer', 'Marge', 'lisa'];
+        let stuff = [123, 'Apu',
+            { Smithers: 'Mr.Burns' },
+            ['Futurama', 'Disenchantment']];
+
+
+
+
+        let nm2 = Array.from(names);
+        let st2 = Array.from(stuff)
+
+        nm2[4] = 'Flanders';
+
+        st2[2].Smithers = 'Not Mr.Burns';
+
+
+        console.log(names)
+        console.log(nm2)
+
+
+        console.log(stuff)
+        console.log(st2)
+        // =================================================
+        const myName = 'Nasimi';
+        const myNameArray = Array.from(myName)
+        console.log(myNameArray);
+
+        const myGirl = 'Parvin';
+        const myGirlArray = Array.from(myGirl);
+        console.log(myGirlArray);
+        //==================================================
+
+        const mix = myNameArray.concat(myGirlArray);
+        console.log(mix);
+
+        console.log(Array.isArray(mix));
+        
+        
+        const person = {
+            first: 'Nasimi',
+            last: 'Guliyev'
+        }
+        console.log(Array.isArray(person));
+
+        
+        
+
+    </script>
+
+</body>
+
+</html>

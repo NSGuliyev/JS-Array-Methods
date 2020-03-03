@@ -1,13 +1,13 @@
 # JS-Array-Methods
 
-Array.from()
-Array.isArray()
+# Array.from() - 03/03/2020
+# Array.isArray()- 03/03/2020
 Array.of()
-# Array.prototype.concat()
+# Array.prototype.concat() - 03/03/2020
 Array.prototype.copyWithin()
 Array.prototype.entries()
 Array.prototype.every()
-Array.prototype.fill()
+Array.prototype.fill() 
 # Array.prototype.filter()
 Array.prototype.find()
 Array.prototype.findIndex()
