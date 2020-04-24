@@ -1,4 +1,4 @@
-// Logical AND (&&)
+// Logical AND (&&)-Ampersand
 //Returns TRUE if both operands are TRUE
 console.log(true && true);
 console.log("***********************************");
