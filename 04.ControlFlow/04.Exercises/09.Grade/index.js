@@ -4,7 +4,7 @@
 // 80 - 89 B
 // 90 - 100 A
 
-// Leonarda Da Vinci says: "Simplicity is the ultimate sophistication"
+//    
 
 // This  is My Solution
 
