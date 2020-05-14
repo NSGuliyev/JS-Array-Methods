@@ -9,7 +9,7 @@ numbers.unshift(1, 2);
 console.log(numbers);
 
 // Middle
-numbers.splice(2, 0, "a", "b");
+numbers.splice(8, 0, 9, 10 );
 console.log(numbers)
 
 numbers.splice

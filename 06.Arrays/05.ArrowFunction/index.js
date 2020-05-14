@@ -9,5 +9,5 @@ const course = courses.find(function (course) {
 
 console.log(course);
 
-const courseArrow = courses.find((course) => course.name === "b");
+const courseArrow = courses.find(course => course.name === "b");
 console.log(courseArrow)
