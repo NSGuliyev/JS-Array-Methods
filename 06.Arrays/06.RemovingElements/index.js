@@ -24,8 +24,3 @@ console.log(numbers)
 const middle = numbers.splice(4, 2)
 console.log(`${middle} is removed from an array with splice() method`);
 console.log(numbers) 
-
-const randomNumber = Date.now()
-console.log(randomNumber)
-
-let yeke = 100
