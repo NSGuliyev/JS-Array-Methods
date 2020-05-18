@@ -21,6 +21,6 @@ console.log(`${first} is removed from an array with shift() method`);
 console.log(numbers)
 
 // Remove element from the middle of an array
-const middle = numbers.splice(4, 2)
+const middle = numbers.splice(4, 1);
 console.log(`${middle} is removed from an array with splice() method`);
 console.log(numbers) 
