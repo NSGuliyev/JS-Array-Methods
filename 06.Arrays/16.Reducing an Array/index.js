@@ -7,6 +7,8 @@ for (let n of numbers) {
 }
 console.log(sum);
 
+
+
 /*
 a = 0, c = 1  => a = 1
 a = 1, c = -1 => a = 0

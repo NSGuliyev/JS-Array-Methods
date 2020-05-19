@@ -6,10 +6,10 @@ console.log(count);
 
 function countOccurrences(array, searchElement) {
   let count = 0;
-  for (let element of array) {
-    if (element === searchElement) {
+  numbers.filter(function find(number) {
+    if (searchElement === number) {
       count++;
     }
-  }
+  });
   return count;
 }
