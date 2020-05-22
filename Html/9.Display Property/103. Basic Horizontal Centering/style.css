@@ -8,10 +8,10 @@ body {
   text-align: right;
 }
 .block {
-  background: blueviolet;
-  color: white;
+  background: black;
+  color:pink;
   width: 300px;
-  margin: 2rem auto;
+  margin: 0rem auto;
 }
 
 .inline {
