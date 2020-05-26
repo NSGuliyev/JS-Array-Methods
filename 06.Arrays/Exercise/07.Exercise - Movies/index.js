@@ -17,3 +17,4 @@ const titles = movies
   .map((m) => m.title);
 
 console.log(titles);
+  
