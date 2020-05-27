@@ -16,17 +16,28 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.navbar {
+  background: red;
+  color: white;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  position: fixed;
+  margin-top: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 
 ul li {
   list-style-type: none;
- 
 }
 
 ul li a {
-  color: #f15025;
+  color: white;
   text-decoration: none;
   letter-spacing: 2px;
-  background: #222222;
-  display: block;
+  word-spacing: 15px;
+  display: inline-block;
   padding: 5px;
+  float: right;
 }
