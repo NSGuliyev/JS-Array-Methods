@@ -9,14 +9,14 @@ function getMax(array) {
 
   // SOLUTION FIRST
 
-  //   let max = array[0];
+    let max = array[0];
 
-  //   for (let i = 1; i < array.length; i++) {
-  //     if (array[i] > max) {
-  //       max = array[i];
-  //     }
-  //   }
-  //   return max;
+    for (let i = 1; i < array.length; i++) {
+      if (array[i] > max) {
+        max = array[i];
+      }
+    }
+    return max;
 
   // SOLUTION SECOND
 
@@ -28,5 +28,5 @@ function getMax(array) {
   //   });
 
   // SECOND solution more cleaner
-  return array.reduce((a, b) => (a > b ? a : b));
+  // return array.reduce((a, b) => (a > b ? a : b));
 }
