@@ -12,6 +12,15 @@ div {
   margin: 200px auto;
 }
 
+div:hover {
+  background: red;
+  color: black;
+  transform: scale(1.1);
+  border: 5px solid blueviolet;
+  border-radius: 50%;
+  text-transform: uppercase;
+}
+
 h1 {
   padding: 112px 50px;
 }
