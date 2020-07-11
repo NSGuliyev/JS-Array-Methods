@@ -25,3 +25,11 @@ console.log("**********************");
 // That is x, to the power of y
 console.log(x ** y);
 console.log("**********************");
+
+function adder(x, y) {
+  console.log(x + y);
+  return x * y;
+}
+
+const show = adder(5, 5);
+console.log(show)
