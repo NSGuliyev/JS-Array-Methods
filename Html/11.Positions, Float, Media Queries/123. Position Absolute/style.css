@@ -1,0 +1,40 @@
+/* 
+position: absolute - relative to the parent with position:relative
+position: fixed - relative to viewport (screen),
+stay as we are scroling
+ will use other content to fill out the space
+*/
+
+div {
+  border: 3px solid red;
+  background: #ffff00;
+  margin-top: 40px;
+  position: relative;
+}
+
+.one {
+  background: blue;
+  color: white;
+  position: absolute;
+  top: 70px;
+  left: 0;
+}
+
+.two {
+  background: green;
+  color: white;
+}
+
+.special {
+  background: pink;
+  font-size: 20px;
+  color: #222222;
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+}
+
+.container {
+  min-height: 100vh;
+  background: blue;
+}

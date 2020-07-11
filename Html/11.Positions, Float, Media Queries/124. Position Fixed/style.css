@@ -1,0 +1,45 @@
+/* 
+position: absolute - relative to the parent with position:relative
+position: fixed - relative to viewport (screen),
+stay as we are scroling
+ will use other content to fill out the space
+*/
+
+.nav {
+  background: red;
+  color: white;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  position: fixed;
+  margin-top: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+div {
+  border: 3px solid red;
+  background: #ffff00;
+  margin-top: 40px;
+}
+
+.one {
+  background: blue;
+  color: white;
+}
+
+.two {
+  background: green;
+  color: white;
+}
+
+.special {
+  background: pink;
+  font-size: 20px;
+  color: #222222;
+}
+
+.container {
+  min-height: 100vh;
+  background: blue;
+}

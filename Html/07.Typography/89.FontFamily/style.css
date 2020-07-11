@@ -1,0 +1,30 @@
+/* 
+font-size  size of the fonts
+font-family  describes the font of the element
+font-weight  how thick or thin characters in text should be 
+font-style   sets font style for a text
+text-align, text-indent
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,500&family=Trade+Winds&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  text-align: right;
+}
+
+.main-heading {
+  font-family: "Trade Winds", cursive;
+  text-align: center;
+}
+
+.sub-heading {
+}
+
+.one {
+}
+
+.two {
+    text-align: left;
+    text-indent: 6rem;
+}
