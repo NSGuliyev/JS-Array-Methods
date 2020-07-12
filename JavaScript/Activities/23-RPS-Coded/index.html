@@ -20,6 +20,50 @@
       var wins = 0;
       var losses = 0;
       var ties = 0;
+
+      /*
+    ===============================
+    Part 2
+    ===============================
+    */
+
+      for (let i = 0; i < 10; i++) {
+        // Collect the user's response and convert to lower case.
+        let userGuess = prompt("Enter r, p, or s to play!");
+        userGuess = userGuess.toLowerCase();
+        // Test if it's working correctly
+        console.log("User guess is " + userGuess);
+
+        /*
+        ===============================
+        Part 3
+        ===============================
+        */
+
+        // Randomly chooses a choice from the options array. This is the Computer's guess.
+        let computerGuess =
+          computerChoices[Math.floor(Math.random() * computerChoices.length)];
+
+        // Test if it's working correctly
+        console.log("Computer guess is" + computerGuess);
+
+        /*
+        ===============================
+        Part 4  
+        ===============================
+        */
+
+        // Only run game logic if user chose a valid option
+        if (userGuess === "r" || userGuess === "p" || userGuess === "s") {
+          alert("The computer chose " + computerGuess);
+
+          /*
+        ===============================
+        Part 5
+        ===============================
+        */
+        }
+      }
     </script>
   </body>
 </html>
