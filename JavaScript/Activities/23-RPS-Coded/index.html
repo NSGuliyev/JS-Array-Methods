@@ -1,69 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper Scissors</title>
-  </head>
-  <body>
-    <script type="text/javascript">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    /*
+  ===============================
+  Part 1
+  ===============================
+  */
+
+    // Creates an array that lists out all of the options (Rock, Paper, Scissors).
+    var computerChoices = ["r", "p", "s"];
+
+    // Creating variables to hold the number of wins, losses, and ties. They start at 0.
+    var wins = 0;
+    var losses = 0;
+    var ties = 0;
+
+    /*
+  ===============================
+  Part 2
+  ===============================
+  */
+
+    for (let i = 0; i < 10; i++) {
+      // Collect the user's response and convert to lower case.
+      let userGuess = prompt("Enter r, p, or s to play!");
+      userGuess = userGuess.toLowerCase();
+      // Test if it's working correctly
+      console.log("User guess is " + userGuess);
+
       /*
-    ===============================
-    Part 1
-    ===============================
-    */
+      ===============================
+      Part 3
+      ===============================
+      */
 
-      // Creates an array that lists out all of the options (Rock, Paper, Scissors).
-      var computerChoices = ["r", "p", "s"];
+      // Randomly chooses a choice from the options array. This is the Computer's guess.
+      let computerGuess =
+        computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
-      // Creating variables to hold the number of wins, losses, and ties. They start at 0.
-      var wins = 0;
-      var losses = 0;
-      var ties = 0;
+      // Test if it's working correctly
+      console.log("Computer guess is" + computerGuess);
 
       /*
-    ===============================
-    Part 2
-    ===============================
-    */
+      ===============================
+      Part 4  
+      ===============================
+      */
 
-      for (let i = 0; i < 10; i++) {
-        // Collect the user's response and convert to lower case.
-        let userGuess = prompt("Enter r, p, or s to play!");
-        userGuess = userGuess.toLowerCase();
-        // Test if it's working correctly
-        console.log("User guess is " + userGuess);
+      // Only run game logic if user chose a valid option
+      if (userGuess === "r" || userGuess === "p" || userGuess === "s") {
+        alert("The computer chose " + computerGuess);
 
         /*
-        ===============================
-        Part 3
-        ===============================
-        */
-
-        // Randomly chooses a choice from the options array. This is the Computer's guess.
-        let computerGuess =
-          computerChoices[Math.floor(Math.random() * computerChoices.length)];
-
-        // Test if it's working correctly
-        console.log("Computer guess is" + computerGuess);
-
-        /*
-        ===============================
-        Part 4  
-        ===============================
-        */
-
-        // Only run game logic if user chose a valid option
-        if (userGuess === "r" || userGuess === "p" || userGuess === "s") {
-          alert("The computer chose " + computerGuess);
-
-          /*
         ===============================
         Part 5
         ===============================
         */
+
+        // Win/lose condition
+        if ((userGuess === "r" && computerGuess === "s" ||
+          userGuess === "s" && computerGuess === "p" ||
+          userGuess === "p" && computerGuess === "r")) {
+          wins++
+          alert("You've won " + wins + " time(s)!")
+        } else if (userGuess === computerGuess) {
+          ties++
+          alert("You've tied " + ties + " time(s)!")
+        } else {
+          losses++
+          alert("You've lost " + losses + " time(s)!")
         }
       }
-    </script>
-  </body>
+    }
+    /*
+    ===============================
+    Part 5
+    ===============================
+    */
+    // When the game is over, alert the totals to the user. We can use the \n character to make a line break.
+    alert("Total wins: " + wins + "\nTotal ties: " + ties + "\nTotal losses: " + losses);
+
+
+  </script>
+</body>
+
 </html>

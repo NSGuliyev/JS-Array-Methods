@@ -15,23 +15,24 @@ body {
 }
 
 .box-1 {
-    background: #581f18;
-    font-size: 65px;gi
+    background: #edc967;
 }
 .box-2 {
-    background: #f0a202;
+    background: #ffdc41;
 }
 .box-3 {
-    background: #d95d39;
+    background: #FFD700;
 }
 .box-4 {
-    background: #202c59;
+    background: #DFCD7C;
 }
 .box-5 {
-    background: #51cb20;
+    background: #C0C0C0;
+    background: linear-gradient(-45deg, #F9F295, #E0AA3E,#E0AA3E, #B88A44);
 }
 
 .generic {
   background:  #581f18;
+
 
 
