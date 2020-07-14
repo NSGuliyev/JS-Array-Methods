@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Joan of Arch</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // Joan of Arc "properties."
+        var joanOfArcInfoParts = ["Real Name", "Grew Up Where", "Known For", "Scars", "Symbolism"];
+
+        // Values for Joan's "properties."
+        var joanOfArcInfoValues = [
+            "Jehanne la Pucelle.",
+            "Domremy, a village in northeastern France.",
+            "Peasant girl, daughter of a farmer, who rose to become Commander of the French army.",
+            "Took an arrow to the shoulder and a crossbow bolt to the thigh while trying to liberate Paris.",
+            "Stands for French unity and nationalism."
+        ];
+
+        var info = "Real Name";
+
+        // How do I use input to get "Jehanne la Pucelle."
+        var index = joanOfArcInfoParts.indexOf(info);
+        var valuesIndex = joanOfArcInfoValues[index];
+
+        console.log(index);
+        console.log(valuesIndex);
+        console.log("--------------------------------");
+
+
+        for (let i = 0; i < joanOfArcInfoParts.length; i++) {
+            // console.log(joanOfArcInfoParts[i])
+            for (let j = 0; j < joanOfArcInfoValues.length; j++) {
+                // console.log(joanOfArcInfoValues[i])
+            }
+            console.log(joanOfArcInfoParts[i] + " - " + joanOfArcInfoValues[i])
+        }
+
+    </script>
+</body>
+
+</html>
