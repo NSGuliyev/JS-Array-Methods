@@ -11,6 +11,7 @@ body {
 
 .container {
     border: 5px solid black;
+    
 }
 
 .cell {
@@ -20,4 +21,5 @@ body {
     font-weight: bold;
     text-align: center;
     border: 1px solid red;
+    margin:20px;
 }

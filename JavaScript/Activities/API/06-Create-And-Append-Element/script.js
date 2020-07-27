@@ -8,7 +8,7 @@ if (tagName !== "h1" && tagName !== "h2" && tagName !== "p" && tagName !== "div"
     document.body.appendChild(tag);
 }
 
-var nextTag = confirm("Would you like to add another TAG ?");
+var nextTag = confirm("Would you like to add another TAG ?"); 
 if (nextTag === true) {
     var secondTagName = prompt("Please enter another HTML TAG (ex. h1, h2, p, div):", "Enter Tag")
 
