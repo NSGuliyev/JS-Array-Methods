@@ -1,0 +1,18 @@
+h4 {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.container {
+  text-align: center;
+}
+
+button {
+  padding: 10px;
+  margin: 20px;
+  cursor: pointer;
+  font-size: 24px;
+  background: #247ba0;
+  color: white;
+}
