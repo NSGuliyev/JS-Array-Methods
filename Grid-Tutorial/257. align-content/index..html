@@ -7,17 +7,20 @@
     <title>Grid Tutorial</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* justify-content */
+        /* align-content strech default value */
         .container {
             min-height: 100vh;
             display: grid;
-            grid-template-columns: repeat(3, 100px);
-            /* justify-content: flex-start; this default value*/
-            /* justify-content: flex-end; */
-            /* justify-content: space-evenly; */
-            /* justify-content: space-between; */
-            /* justify-content: space-around; */
-            justify-content: center;
+            grid-template-columns: 100px 100px 200px;
+            grid-template-rows: 200px 200px;
+            align-content: center;
+            /* align-content: stretch; */
+            /* align-content: flex-start; */
+            /* align-content: flex-end; */
+            /* align-content: space-around; */
+            /* align-content: space-between; */
+            /* align-content: space-evenly; */
+
         }
     </style>
 </head>

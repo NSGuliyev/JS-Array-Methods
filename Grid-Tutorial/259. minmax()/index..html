@@ -11,14 +11,27 @@
         .container {
             min-height: 100vh;
             display: grid;
-            grid-template-columns: repeat(3, 100px);
-            /* justify-content: flex-start; this default value*/
-            /* justify-content: flex-end; */
-            /* justify-content: space-evenly; */
-            /* justify-content: space-between; */
-            /* justify-content: space-around; */
-            justify-content: center;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            align-items: center;
+            justify-items: center;
         }
+        
+        .cell-1 {
+            justify-self: flex-end;
+            align-self: flex-end;
+        }
+
+        .cell-2 {
+            justify-self: flex-end;
+            align-self: flex-end;
+        }
+
+        .cell-3 {
+            justify-self: flex-end;
+            align-self: flex-end;
+        }
+        
     </style>
 </head>
 
