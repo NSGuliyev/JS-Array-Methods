@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic JavaScript Dump</title>
+
+    <!-- Here we create a bit of CSS for classes called ".fancy" -->
+    <style>
+      .fancy {
+        font-size: 100px;
+        color: green;
+      }
+
+      .more-fancy {
+        font-size: 110px;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- We created an empty HTML div. Notr that there is no content inside.  -->
+    <div id="empty-div"></div>
+
+    <!-- Now we create a new JavaScript script -->
+    <script type="text/javascript">
+      // Inside, we latch onto the "emptyDiv" using the javascript ".getElementByID" selector.
+      var targetDiv = document.getElementById("empty-div");
+
+      // Then we use JavaScript method ".textContent" to change the content to "Hello friends!"
+      targetDiv.textContent = "Hello Friends";
+
+      // In this example, we instead create a new div called "newDiv"
+      var newDiv = document.createElement("div");
+
+      // Then we give this newDiv the text "A plesure to meet you".
+      newDiv.textContent = "A plesure to meet you";
+
+      // Now we use the ".appendChild" method to combine two divs together on the page
+      targetDiv.appendChild(newDiv);
+
+      // Then we apply that CSS class to our newDiv
+      newDiv.setAttribute("class", "fancy ");
+      targetDiv.setAttribute("class", "more-fancy");
+    </script>
+  </body>
+</html>
