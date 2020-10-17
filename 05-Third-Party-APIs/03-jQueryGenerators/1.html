@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic jQuery Dump</title>
+
+    <!-- Added link to the jQuery library -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Created an empty HTML div. Note that there is no content -->
+    <div id="empty-div"></div>
+
+    <style>
+      .fancy {
+        font-size: 100px;
+        color: green;
+      }
+    </style>
+
+    <script type="text/javascript">
+      // Thanks to jQuery's handy $ selector .... we have a wealth of new method for selecting and manipulating HTML
+
+      // Here we are using jQuery's HTML method to instantly select and change the contents of our empty-div.
+      $("#empty-div").html("<h1>Hello Friends !</h1>");
+
+      // if we need each line to be it is own div, we could just as easyily create a new diw.
+      var newDiv = $("<div>");
+      newDiv.text("A pleasure to meet you !");
+
+      // NOTICE DIFFERENCE
+      //-----------------------------
+      // $("#empty-div")     < -- Find a DOM node with the ID empty-div
+      // $("<div>")          < -- Create a new DIV
+
+      // Then we can append it to the other div using the same ".append" method
+      $("#empty-div").append(newDiv);
+
+      // Some CSS
+      newDiv.attr("class", "fancy")
+
+
+      // We can just easily append a new line using a similarly simple .append method.
+      // $("#empty-div").append("<h1>A pleasure to meet you ! </h1>");
+    </script>
+  </body>
+</html>

@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Drink List</title>
-</head>
-<body>
- 
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Content</title>
+  </head>
+  <body>
+    <h1>Drink Selection</h1>
+    <hr />
+
+    <!-- Here we create a generic drink-options DIV  -->
+    <div id="drink-options"></div>
+
+    <script type="text/javascript">
+      var drinkList = [
+        "Coffee: $5",
+        "Expresso : $7",
+        "Cappucciono: $6",
+        "Latte: $4",
+        "Tea: $3",
+        "Ice Coffe: $6",
+        "Ice Espresso: $8",
+        "Ice Latte: $6",
+        "Ice Tea: $4",
+      ];
+
+      // 1.Create code that "grabs" the div with the matching id (#drink-options);
+      var drinkOptions = document.getElementById("drink-options");
+
+      // Then we use for loop to iterate through all the drinks in drinkList.
+      // With each iteration, we perfom a series of code operations each time
+
+      for (var i = 0; i < drinkList.length; i++) {
+        // for each drink in the array, we create a new paragraph to hold the text
+        // a new paragraph will be created with each iteration of the loop
+        var newDrinkP = document.createElement("p");
+
+        // Then we assign the text of this paragraph to the text in the array
+        newDrinkP.textContent = drinkList[i];
+
+        //Then we the paragraph to our main div on the page ("#drink-options")
+        drinkOptions.appendChild(newDrinkP);
+      }
+
+      /*
+      ================= BONUS ==================== Second Solution ========================
+      */
+
+      // drinkList.forEach(function (drink) {
+      //   var newDrinkP = document.createElement("p");
+      //   newDrinkP.textContent = drink;
+      //   drinkOptions.appendChild(newDrinkP);
+      // });
+    </script>
+  </body>
 </html>
